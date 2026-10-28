@@ -1,0 +1,42 @@
+@base = http://localhost:8080
+### Categories
+GET {{base}}/api/categories
+### Create; copy response id into ticketId
+POST {{base}}/api/tickets
+Content-Type: application/json
+
+{"title":"Не работает принтер","description":"Кабинет 205","categoryId":1,"priority":"HIGH","dueAt":"2026-12-01T12:00:00Z"}
+
+### Replace with created id
+@ticketId = 00000000-0000-0000-0000-000000000000
+GET {{base}}/api/tickets/{{ticketId}}
+### Edit
+PUT {{base}}/api/tickets/{{ticketId}}
+Content-Type: application/json
+
+{"description":"Проверить питание","priority":"MEDIUM","dueAt":null}
+
+### Start
+PATCH {{base}}/api/tickets/{{ticketId}}/status
+Content-Type: application/json
+
+{"status":"IN_PROGRESS"}
+
+### Resolve
+PATCH {{base}}/api/tickets/{{ticketId}}/status
+Content-Type: application/json
+
+{"status":"RESOLVED"}
+
+### Forbidden reopen: 409
+PATCH {{base}}/api/tickets/{{ticketId}}/status
+Content-Type: application/json
+
+{"status":"IN_PROGRESS"}
+
+### History
+GET {{base}}/api/tickets/{{ticketId}}/history
+### Filter
+GET {{base}}/api/tickets?status=NEW&priority=HIGH&page=0&size=20&overdue=true
+### Report
+GET {{base}}/api/reports/summary?from=2026-01-01T00:00:00Z&to=2027-01-01T00:00:00Z

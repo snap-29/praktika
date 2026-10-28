@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.ithub.support.BusinessTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2026-10-23T22:33:25.158Z" hostname="POPIK" time="4.75">
+  <properties/>
+  <testcase name="unknownTicket404()" classname="ru.ithub.support.BusinessTest" time="2.749"/>
+  <testcase name="[1] target=IN_PROGRESS" classname="ru.ithub.support.BusinessTest" time="0.149"/>
+  <testcase name="[2] target=RESOLVED" classname="ru.ithub.support.BusinessTest" time="0.006"/>
+  <testcase name="cannotSkipProgress()" classname="ru.ithub.support.BusinessTest" time="0.003"/>
+  <testcase name="absentDeadlineNotOverdue()" classname="ru.ithub.support.BusinessTest" time="0.002"/>
+  <testcase name="openEditReturnsPersistedTicket()" classname="ru.ithub.support.BusinessTest" time="0.005"/>
+  <testcase name="createIsNewAndHistoryRecorded()" classname="ru.ithub.support.BusinessTest" time="0.02"/>
+  <testcase name="closedEditDoesNotWrite()" classname="ru.ithub.support.BusinessTest" time="0.011"/>
+  <testcase name="pastDueIsOverdue()" classname="ru.ithub.support.BusinessTest" time="0.001"/>
+  <testcase name="progressCancellation()" classname="ru.ithub.support.BusinessTest" time="0.001"/>
+  <testcase name="newToProgress()" classname="ru.ithub.support.BusinessTest" time="0.001"/>
+  <testcase name="[1] target=NEW" classname="ru.ithub.support.BusinessTest" time="0.001"/>
+  <testcase name="[2] target=IN_PROGRESS" classname="ru.ithub.support.BusinessTest" time="0.0"/>
+  <testcase name="[3] target=RESOLVED" classname="ru.ithub.support.BusinessTest" time="0.001"/>
+  <testcase name="[4] target=CANCELLED" classname="ru.ithub.support.BusinessTest" time="0.001"/>
+  <testcase name="forbiddenTransitionDoesNotWrite()" classname="ru.ithub.support.BusinessTest" time="0.015"/>
+  <testcase name="progressToResolved()" classname="ru.ithub.support.BusinessTest" time="0.001"/>
+  <testcase name="newCancellation()" classname="ru.ithub.support.BusinessTest" time="0.001"/>
+  <testcase name="terminalNotOverdue()" classname="ru.ithub.support.BusinessTest" time="0.002"/>
+  <testcase name="exactDueIsNotOverdueRegression()" classname="ru.ithub.support.BusinessTest" time="0.001"/>
+  <testcase name="unknownCategoryRejectedBeforeInsert()" classname="ru.ithub.support.BusinessTest" time="0.007"/>
+  <testcase name="blankTitleInvalid()" classname="ru.ithub.support.BusinessTest" time="1.541"/>
+  <system-out><![CDATA[01:33:28.950 [Test worker] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.3.Final
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\georg\Documents\Codex\g-support\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.8\f09415827a71be7ed621c7bd02550678f28bc81c\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

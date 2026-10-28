@@ -1,6 +1,6 @@
 # Контракт REST API
 
-База `/api`, JSON UTF-8. Полный машинный OpenAPI генерируется работающим приложением на `/v3/api-docs`, Swagger — `/swagger-ui/index.html`. Готовая коллекция: `demo/requests.http`.
+База `/api`, JSON UTF-8. Полный машинный OpenAPI генерируется работающим приложением на `/v3/api-docs`, Swagger — `/swagger-ui/index.html`. Экспорт проверенного контракта: `docs/openapi.json`. Готовая коллекция: `demo/requests.http`.
 
 | Метод | Путь | Назначение / успех |
 |---|---|---|
